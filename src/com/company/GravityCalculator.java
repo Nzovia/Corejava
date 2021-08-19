@@ -29,7 +29,7 @@ public class GravityCalculator {
                     fallingTime + initialPosition;
             System.out.println("The object position after " + fallingTime+ " the second is "+ finalPosition + "m.");
             System.out.println("Input \"quit\" to exit the application");
-            textvar = in.nextLine();
+            textvar = in.next();
 
             if("pos".equals(textvar)){
                 System.out.println(" input the initial position of the object: ");
