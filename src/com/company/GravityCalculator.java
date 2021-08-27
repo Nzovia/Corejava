@@ -13,7 +13,7 @@ public class GravityCalculator {
         double gravity = -9.81;
         double initialVelocity = 0.0;
         double fallingTime = 10.0;
-        double initialPosition = -0.0;
+        double initialPosition = 0.0;
         double finalPosition = 0.0;
 
         do
@@ -25,7 +25,7 @@ public class GravityCalculator {
                     + "(input\"velo\"to change it)");
             System.out.println("falling time = " + fallingTime +
                     "(input\"time\" to change it)");
-            finalPosition = 0.5 *gravity * fallingTime * fallingTime * initialVelocity *
+            finalPosition = 0.5 *gravity * fallingTime * fallingTime + initialVelocity *
                     fallingTime + initialPosition;
             System.out.println("The object position after " + fallingTime+ " the second is "+ finalPosition + "m.");
             System.out.println("Input \"quit\" to exit the application");
